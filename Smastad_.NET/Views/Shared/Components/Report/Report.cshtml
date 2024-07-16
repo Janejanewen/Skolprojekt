@@ -1,0 +1,42 @@
+﻿@model Errand;
+
+		<div asp-validation-summary="All" class="error"></div>
+
+		<p>
+			<input type="hidden" name="isSubmitted" value="true" />
+		</p>
+		<p>
+			<label asp-for="Place"></label><br />
+			<input asp-for="Place" />
+			<span asp-validation-for="Place" class="error"></span>
+		</p>
+		<p>
+			<label asp-for="TypeOfCrime"></label><br />
+			<input asp-for="TypeOfCrime" />
+			<span asp-validation-for="TypeOfCrime" class="error"></span>
+		</p>
+		<p>
+			<label asp-for="DateOfObservation"></label><br />
+			<input asp-for="DateOfObservation" />
+			<span asp-validation-for="DateOfObservation" class="error"></span>
+		</p>
+		<p>
+			<label asp-for="InformerName"></label><br />
+			<input asp-for="InformerName" />
+			<span asp-validation-for="InformerName" class="error"></span>
+		</p>
+		<p>
+			<label asp-for="InformerPhone"></label><br />
+			<input asp-for="InformerPhone" />
+			<span asp-validation-for="InformerPhone" class="error"></span>
+		</p>
+		<p>
+			<label asp-for="Observation">Observation:</label><br />
+			<textarea asp-for="Observation" maxlength="300" id="form-story" rows="3" cols="30" placeholder="Beskriv din observation(ex. namn på misstänkt person):"></textarea>
+			<span asp-validation-for="Observation" class="error"></span>
+		</p>
+		<p>
+			<input type="reset" />
+			<input class="button" type="submit" value="Skicka in" />
+		</p>
+	

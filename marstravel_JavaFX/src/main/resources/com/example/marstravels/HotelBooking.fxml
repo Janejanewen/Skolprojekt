@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.marstravels.HotelBookingController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <bottom>
+            <BorderPane prefHeight="39.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+               <center>
+                  <Button fx:id="btnInformation" mnemonicParsing="false" onAction="#hotelInformationView" text="INFORMATION" BorderPane.alignment="CENTER" />
+               </center>
+               <right>
+                  <Button fx:id="btnNext" mnemonicParsing="false" onAction="#openNextScene" text="NÄSTA" BorderPane.alignment="CENTER" />
+               </right>
+               <left>
+                  <Button fx:id="btnBack" mnemonicParsing="false" onAction="#openPreviousScene" text="TILLBAKA" BorderPane.alignment="CENTER" />
+               </left>
+            </BorderPane>
+         </bottom>
+         <center>
+            <SplitPane dividerPositions="0.4141414141414141" prefHeight="400.0" prefWidth="615.4" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="LeftImageView" fitHeight="332.0" fitWidth="1071.0" layoutX="-403.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/HotelBooking/LeftImage2.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblCabinAlternatives" layoutX="14.0" layoutY="14.0" text="Hotell" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="30.0" />
+                           </font>
+                        </Label>
+                        <RadioButton fx:id="btnJin" layoutX="12.0" layoutY="224.0" mnemonicParsing="false" onAction="#changeHotelImage" text="Jin Jiang Intergalactic" textFill="WHITE" AnchorPane.bottomAnchor="87.20000000000002" AnchorPane.leftAnchor="12.0">
+                           <font>
+                              <Font name="Arial Black" size="14.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="HotelButtons" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="btnAtman" layoutX="12.0" layoutY="124.0" mnemonicParsing="false" onAction="#changeHotelImage" text="Atman resorts" textFill="WHITE" toggleGroup="$HotelButtons" AnchorPane.bottomAnchor="187.20000000000002" AnchorPane.leftAnchor="12.0">
+                           <font>
+                              <Font name="Arial Black" size="14.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="btnFour" layoutX="12.0" layoutY="174.0" mnemonicParsing="false" onAction="#changeHotelImage" text="Four seasons" textFill="WHITE" toggleGroup="$HotelButtons" AnchorPane.bottomAnchor="137.20000000000002" AnchorPane.leftAnchor="12.0">
+                           <font>
+                              <Font name="Arial Black" size="14.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="btnMarriot" layoutX="12.0" layoutY="274.0" mnemonicParsing="false" onAction="#changeHotelImage" text="Marriot Intergalactic" textFill="WHITE" toggleGroup="$HotelButtons" AnchorPane.bottomAnchor="37.200000000000045" AnchorPane.leftAnchor="12.0">
+                           <font>
+                              <Font name="Arial Black" size="14.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="btnHilton" layoutX="12.0" layoutY="74.0" mnemonicParsing="false" onAction="#changeHotelImage" text="Hilton" textFill="WHITE" toggleGroup="$HotelButtons" AnchorPane.bottomAnchor="237.20000000000002" AnchorPane.leftAnchor="12.0">
+                           <font>
+                              <Font name="Arial Black" size="14.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="RightImageView" fitHeight="340.0" fitWidth="671.0" layoutX="-129.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/HotelBooking/HotelRight.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </center>
+         <top>
+            <BorderPane prefHeight="26.0" prefWidth="586.0" BorderPane.alignment="CENTER">
+               <right>
+                  <Button fx:id="btnShop" mnemonicParsing="false" onAction="#openShoppingCart" text="VARUKORG" BorderPane.alignment="CENTER" />
+               </right>
+            </BorderPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

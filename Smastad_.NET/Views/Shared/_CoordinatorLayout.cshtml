@@ -1,0 +1,12 @@
+﻿@{
+    Layout="_HeaderLayout";
+}
+             <nav>
+				<ul>
+					<li><a class="reports" asp-controller="Coordinator" asp-action="StartCoordinator">Ärenden</a></li>
+			        <li><a class="reportAdd" asp-controller="Coordinator" asp-action="ReportCrime">Rapportera brott</a></li>
+			        <li class="right"><a class="logout" asp-controller="Account" asp-action="Login">Logga ut</a></li>
+				</ul>
+			</nav><!-- End Nav -->
+			<div id="content">
+        @RenderBody()

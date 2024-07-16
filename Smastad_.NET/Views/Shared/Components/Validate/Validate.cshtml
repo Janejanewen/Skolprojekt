@@ -1,0 +1,40 @@
+﻿@model Errand;
+
+
+<h2>Din anmälan av miljöbrott</h2>
+<p>
+	<span class="label">
+		Vänligen läs igenom din anmälan och se att allt är okej.<br />
+		Om något är fel, gå tillbaka och ändra. Annars välj Bekräfta.
+	</span>
+</p>
+
+<p>
+	<span class="label">Var har brottet skett någonstans?:</span>
+	@Model.Place
+</p>
+
+<p>
+	<span class="label">Vilken typ av brott?:</span>
+	@Model.TypeOfCrime
+</p>
+
+<p>
+	<span class="label">När skedde brottet?: </span>
+	@Model.DateOfObservation.ToShortDateString()
+</p>
+
+<p>
+	<span class="label">Ditt namn (för- och efternamn): </span>
+	@Model.InformerName
+</p>
+
+<p>
+	<span class="label">Din telefon: </span>
+	@Model.InformerPhone
+</p>
+
+<p>
+	<span class="label">Mer information:</span>
+	@Model.Observation
+</p>

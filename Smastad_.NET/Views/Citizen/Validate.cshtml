@@ -1,0 +1,16 @@
+﻿@model Errand;
+@{
+    Layout = "_MainLayout";
+}
+
+
+    <section id="mainColumn">
+
+
+	@await Component.InvokeAsync("Validate")
+
+		<p>
+			<a class="button" asp-controller="Home" asp-action="Index">Tillbaka</a> 
+			<a class="button" asp-controller="Citizen" asp-action="Thanks">Bekräfta</a>
+		</p>
+				</section><!-- End Left -->

@@ -1,0 +1,12 @@
+2023-03-17;2023-09-17;Economy;Svit;budget1;budget3;2;0;0;0;0;0;20000;3;javaClass.Hotel@1fb33d42
+2023-03-17;2023-09-17;Svit;Svit;budget1;budget1;0;0;0;0;0;0;20000;3;javaClass.Hotel@7a7d5b2c
+2023-03-17;2023-09-17;Svit;Svit;budget1;budget1;0;0;0;0;0;0;20000;3;javaClass.Hotel@233f1e44
+2023-03-17;2023-09-17;Svit;Svit;budget1;budget1;0;0;0;0;0;0;20000;3;javaClass.Hotel@1ad923bc
+2023-10-01;2023-04-01;Svit;Svit;budget1;budget1;0;0;0;0;0;0;20000;1;Hilton
+2023-10-01;2023-04-01;Svit;Svit;budget1;budget1;0;0;0;0;0;0;20000;1;Hilton
+2023-10-01;2023-04-01;Inside;Svit;lyx2;mellan1;2;1;2;1;2;2;20000;2;Four Seasons
+2023-10-01;2023-04-01;Svit;Svit;budget1;budget1;0;0;0;0;0;0;20000;1;Hilton
+2025-10-01;2023-04-01;Inside;Spaceside;mellan1;lyx1;1;2;3;6;2;2;20055;4;Jin Jiang Intergalactic
+2023-10-01;2023-04-01;Svit;Svit;budget1;budget1;0;0;0;0;0;0;20000;3;Hilton
+2023-10-01;2023-04-01;Svit;Svit;budget1;budget1;0;0;0;0;0;0;20000;1;Jin Jiang
+2023-10-01;2023-04-01;Spaceside;Spaceside;lyx1;lyx3;0;0;0;0;0;0;20000;5;Hilton

@@ -1,0 +1,17 @@
+﻿@model Errand;
+@{
+    Layout = "_CoordinatorLayout";
+}
+	
+
+
+		<h2>Din anmälan av miljöbrott</h2>
+		<p class="info">Du är inloggad som samordnare</p>
+
+@await Component.InvokeAsync("Validate")
+
+			<p>
+				<a class="button" asp-controller="Home" asp-action="Index">Tillbaka</a>
+				<a class="button" asp-controller="Coordinator" asp-action="Thanks">Bekräfta</a>
+			</p>
+

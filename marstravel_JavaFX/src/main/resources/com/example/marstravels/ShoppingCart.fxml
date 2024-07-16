@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.marstravels.ShoppingCartController">
+   <children>
+      <Label fx:id="lblSumNmbr" layoutX="488.0" layoutY="316.0" text="labsumman">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMoney" layoutX="183.0" layoutY="281.0" text="InfoBetalkort">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMealChoice" layoutX="183.0" layoutY="138.0" prefHeight="27.0" prefWidth="360.0" text="labMat">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMealChoiceR" layoutX="390.0" layoutY="138.0" prefHeight="27.0" prefWidth="200.0" text="labMatReturn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCabinChoice" layoutX="180.0" layoutY="102.0" prefHeight="27.0" prefWidth="379.0" text="labHytt">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCabinChoiceR" layoutX="390.0" layoutY="102.0" prefHeight="27.0" prefWidth="200.0" text="labHyttReturn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInsuranceChoice" layoutX="183.0" layoutY="246.0" prefHeight="27.0" prefWidth="194.0" text="labFörsäkring">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="20.0" layoutY="356.0" mnemonicParsing="false" onAction="#openPreviousScene" text="Tillbaka">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblTitle" layoutX="24.0" layoutY="14.0" text="Dina val">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+      </Label>
+      <VBox layoutX="183.0" layoutY="175.0" prefHeight="60.0" prefWidth="83.0">
+         <children>
+            <Label fx:id="lblTicket1" text="labEvent1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTicket2" text="labEvent2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTicket3" text="labEvent3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="384.0" layoutY="170.0" prefHeight="60.0" prefWidth="83.0">
+         <children>
+            <Label fx:id="lblTicket1R" text="labEvent1Return">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTicket2R" text="labEvent2Return">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTicket3R" text="labEvent3Return">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="6.0" />
+         </padding>
+      </VBox>
+      <Label fx:id="lblCabin" alignment="CENTER" layoutX="-29.0" layoutY="98.0" prefHeight="35.0" prefWidth="145.0" text="Hytt:" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <Label fx:id="lblMeal" alignment="CENTER" layoutX="-24.0" layoutY="134.0" prefHeight="35.0" prefWidth="153.0" text="Mat:" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTickets" alignment="CENTER" layoutX="15.0" layoutY="179.0" prefHeight="32.0" prefWidth="145.0" text="Evenemang:">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCreditcard" alignment="CENTER" layoutX="1.0" layoutY="280.0" prefHeight="25.0" prefWidth="157.0" text="Betalkort:">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInsurance" alignment="CENTER" layoutX="5.0" layoutY="245.0" prefHeight="23.0" prefWidth="161.0" text="Försäkring:">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSum" alignment="CENTER" layoutX="364.0" layoutY="315.0" prefHeight="30.0" prefWidth="131.0" text="Summa:" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTo" layoutX="180.0" layoutY="72.0" text="Avresa">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblFrom" layoutX="389.0" layoutY="72.0" text="Returresa">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Line endX="449.9000244140625" endY="-1.52587890625E-5" layoutX="198.0" layoutY="133.0" startX="-218.20001220703125" startY="-1.52587890625E-5" />
+      <Line endX="434.69287109375" endY="-1.52587890625E-5" layoutX="212.0" layoutY="165.0" startX="-218.20001220703125" startY="-1.52587890625E-5" />
+      <Line endX="434.69287109375" endY="-1.52587890625E-5" layoutX="211.0" layoutY="102.0" startX="-218.20001220703125" startY="-1.52587890625E-5" />
+      <Line endX="434.69287109375" endY="-1.52587890625E-5" layoutX="211.0" layoutY="235.0" startX="-218.20001220703125" startY="-1.52587890625E-5" />
+      <Line endX="434.69287109375" endY="-1.52587890625E-5" layoutX="221.0" layoutY="273.0" startX="-218.20001220703125" startY="-1.52587890625E-5" />
+      <Line endX="543.5999755859375" layoutX="197.0" layoutY="308.0" startX="-218.20001220703125" startY="-1.52587890625E-5" />
+      <Line endX="434.69287109375" endY="-1.52587890625E-5" layoutX="223.0" layoutY="345.0" startX="-218.20001220703125" startY="-1.52587890625E-5" />
+   </children>
+</AnchorPane>
