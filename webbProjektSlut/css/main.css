@@ -1,0 +1,166 @@
+/* sökrutan */
+#query {
+  width: 300px;
+  font-size: 15px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 35%;
+  margin-top: 20px;
+  border: 1px solid #688125; }
+
+#searchButton {
+  height: 45px;
+  width:auto;
+  font-size: 15px;
+  background-color: #688125;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+/* innehållet */
+.container {
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 20px; 
+  background-color: #ffffcf; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
+}
+/* bild till startsidan */
+.image-food1 {
+  width: auto;
+  height: 150px;
+  margin: 20px;
+  background-image: url('../images/food1.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+/* Header */
+header {
+  background-color: #688125;
+  color: #ffffff;
+  padding: 10px 25px;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+/* recept innehållet*/
+.meal-card {
+  width: auto;
+  display: flex;  
+  align-items: flex-start; 
+  border: 1px solid #cdd89a;
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-size: 1rem;
+}
+
+.meal-card .meal-image {
+  width: 30%;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px; 
+  flex-shrink: 0; 
+}
+
+.meal-card h3 {
+  margin-top: 0;
+  color: #ea4e4e;
+  font-size: 2rem;
+  border-bottom: 1px solid #cdd89a;
+  padding-bottom: 5px;
+}
+ 
+/* Food Image Styles */
+.image{
+  width: 50%;
+  height: auto;
+  float: right;
+  margin: 10px;
+}
+
+
+/* mobil storlek*/
+@media screen and (max-width: 700px) {
+  #query {
+    width: 80px;
+    font-size: 10px;
+    background-color: white;
+    border: 1px solid #688125; }
+  
+  #searchButton {
+    height: 30px;
+    width:auto;
+    font-size: 10px;
+    background-color: #688125;
+    color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #ffffcf; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+  }
+  
+  .image-food1 {
+    width: auto;
+    height: 50px;
+    background-image: url('../images/food1.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+  
+  header {
+    background-color: #688125;
+    color: #ffffff;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  .meal-card {
+    width: auto;
+    display: flex;  
+    align-items: flex-start; 
+    border: 1px solid #cdd89a;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  .meal-card .meal-image {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px; 
+    flex-shrink: 0; 
+  }
+  
+  .meal-card h3 {
+    margin-top: 0;
+    color: #ea4e4e;
+    font-size: 10px;
+    border-bottom: 1px solid #cdd89a;
+    padding-bottom: 5px;
+  }
+
+  .image{
+    width: 30%;
+    height: auto;
+    float: right;
+  }
+}
+

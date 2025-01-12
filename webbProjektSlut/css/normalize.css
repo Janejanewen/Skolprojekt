@@ -1,0 +1,101 @@
+body {
+    font-family: 'Times New Roman', Times, serif; 
+    margin: 0;
+    background-color: #e7f4c5;
+    min-height: 100vh;
+    padding: 20px;
+    font-size: 25px; 
+    line-height: 1.8; 
+}
+
+
+/* Nav */
+nav.head {
+    background: #ffffcf;
+    padding: 10px;
+    color: white;
+    text-align: center;}
+nav.head ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;}
+nav.head ul li {
+    display: inline;
+    margin-right: 15px;}
+nav.head ul li a {
+    color: #688125;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;}
+nav.head ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;}
+
+/* Footer  */
+footer {
+    background: #688125;
+    padding: 10px;
+    color: white;}
+
+/* Contact */
+div.contact {
+    background: #e7f4c5;
+    border: 2px solid #688125;
+    padding: 1em;}
+
+/* Text */
+h1 {
+    font-family: 'Times New Roman', Times, serif; 
+    color: #ffffff; 
+    line-height: 1.8;
+}
+
+
+
+/* mobil storlek */
+@media screen and (max-width: 700px) {
+    body {
+        font-family: 'Times New Roman', Times, serif; 
+        margin: 0;
+        background-color: #e7f4c5;
+        font-size: 8px; 
+    }
+
+    nav.head {
+        background: #ffffcf;
+        padding: 10px;
+        color: white;
+        text-align: center;}
+    nav.head ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;}
+    nav.head ul li {
+        display: inline;
+        margin-right: 15px;}
+    nav.head ul li a {
+        color: #688125;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px;
+        display: inline-block;}
+    nav.head ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        }
+    
+    footer {
+        background: #688125;
+        padding: 10px;
+        color: white;}
+    
+    div.contact {
+        background: #e7f4c5;
+        border: 2px solid #688125;
+        padding: 1em;}
+    
+    h1 {
+        font-family: 'Times New Roman', Times, serif; 
+        color: #ffffff; 
+    }
+}
